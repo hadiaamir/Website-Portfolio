@@ -1,0 +1,241 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+}
+
+
+#p2-intro
+{
+	background-color: #F3F3F3;
+  	overflow: hidden;
+  	margin-top: 4em;
+  	padding-bottom: 3em;
+  	height: 70vh;
+}
+
+.p2-intro-cnt
+{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+
+#p2-intro h1
+{
+	font-size: 2.5em;
+	font-weight: 700;
+	color: #4A4A4A;
+	text-align: center;
+}
+
+#p2-intro img
+{
+	width: 20em;
+	margin-top: 5vw;
+	margin-left: 5vw;
+	margin-right: 5vw;
+}
+
+#p2-intro p
+{
+	margin-top: 5vw;
+	margin-right: 5vw;
+}
+
+#p2-design
+{
+	background-color: #F3F3F3;
+  	overflow: hidden;
+  	padding-bottom: 3em;
+  	height: 100%;
+}
+
+#p2-design h1
+{
+	padding-top: 2vw;
+	margin-bottom: 2vw;
+	font-size: 2.5em;
+	font-weight: 700;
+	color: #4A4A4A;
+	text-align: center;
+}
+
+.navbar
+{
+	text-align: center;	
+}
+
+#menu
+{
+	display: grid;
+	grid-template-columns: auto auto;
+	border: 1px solid #979797;
+}
+
+
+
+#p2-des-ux
+{
+	display: flex;
+	justify-content: center;
+	  align-items: center;
+	  flex-direction: column;
+}
+
+
+.outer
+{
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+.outer div
+{
+	margin-left: 4em;
+	margin-right: 4em;
+}
+
+
+.mockup h3
+{
+	font-weight: 300;
+	font-size: 1.4em;
+}
+
+.mockup button
+{
+	margin-left: 1em;
+	color: #999;
+	font-weight: 400;
+	/* Button Background: */
+	background: #FFFFFF;
+	border: 1px solid #D8D8D8;
+	border-radius: 6px;
+}
+
+.mockup button:hover
+{
+	color: #fff;
+	background-color: #4A4A4A;
+	transition: background-color .3s;
+}
+
+
+
+.devices h3
+{
+	font-weight: 300;
+	font-size: 1.4em;
+}
+
+.devices button
+{
+	margin-left: 1em;
+	color: #999;
+	font-weight: 400;
+	/* Button Background: */
+	background: #FFFFFF;
+	border: 1px solid #D8D8D8;
+	border-radius: 6px;
+}
+
+.devices button:hover
+{
+	color: #fff;
+	background-color: #4A4A4A;
+	transition: background-color .3s;
+}
+
+.wireframe img
+{
+	width: 14.375em;
+}
+
+.mockup img
+{
+	width: 25em;
+}
+
+.devices img
+{
+	width: 26.25em;
+}
+
+
+
+
+#brand
+{
+	width: 2.5em;
+}
+
+
+
+@media only screen and (max-width: 992px) 
+{
+
+	#p2-intro
+	{	
+		padding-bottom: 2em;
+	  	height: 100vh;
+	}
+
+
+	#p2-intro p
+	{
+		margin-left: 5vw;
+	}
+
+	.p2-intro-cnt
+	{
+		display: grid;
+		grid-template-columns: auto;
+	}
+
+	.outer
+	{
+		display: grid;
+		grid-template-columns: auto;
+	}
+
+	.outer div
+	{
+		margin-left: 5em;
+	}
+
+	.mockup img
+	{
+		width: 20em;
+	}
+
+	.devices img
+	{
+		width: 20em;
+	}
+
+	
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
