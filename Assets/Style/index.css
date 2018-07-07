@@ -61,23 +61,25 @@ html, body
 
 #about-section button
 {
+	color: #999;
 	font-weight: 400;
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
 	border-color: #4A4A4A;
-	color: #4A4A4A;
+	border: 1px solid #D8D8D8;
 	background-color: #fff;
 	font-size: 1.5em;
 	margin-top: 3em;
 	height: 2.6em;
 	width: 5em;
+	border-radius: 6px;
 }
 
 #about-section button:hover
 {
-	background-color: #333;
-	color: #fff;
+	background-color: #ECEBEB;
+	transition: background-color .3s;
 }
 
 /*---------------------projects----------------*/
@@ -86,7 +88,7 @@ html, body
 #projects-section
 {
 	background-color: #F3F3F3;
-	height: 100vh;
+	height: 100%;
  	padding: 2em;
  	padding-bottom: 12em;
 }
@@ -138,23 +140,25 @@ html, body
 
 #projects-section button
 {
+	color: #999;
 	font-weight: 400;
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
 	border-color: #4A4A4A;
+	border: 1px solid #D8D8D8;
 	background-color: #fff;
-	color: #4A4A4A;
 	font-size: 1.5em;
 	margin-top: 3em;
 	height: 2.6em;
 	width: 5em;
+	border-radius: 6px;
 }
 
 #projects-section button:hover
 {
-	background-color: #4A4A4A;
-	color: #fff;
+	background-color: #ECEBEB;
+	transition: background-color .3s;
 }
 
 #contact-section
@@ -191,7 +195,8 @@ html, body
 
 .contact-social i:hover
 {
-	color: #4A4A4A;
+	color: #ECEBEB;
+	transition: color .3s;
 }
 
 

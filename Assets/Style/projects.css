@@ -6,14 +6,18 @@ html, body
 	overflow-x: hidden;
 }
 
+.active
+{
+	background-color: #fff;
+}
 
 #p2-intro
 {
 	background-color: #F3F3F3;
   	overflow: hidden;
-  	margin-top: 4em;
+  	margin-top: 5.2em;
   	padding-bottom: 3em;
-  	height: 70vh;
+  	height: 100%;
 }
 
 .p2-intro-cnt
@@ -22,9 +26,9 @@ html, body
 	grid-template-columns: auto auto;
 }
 
-
 #p2-intro h1
 {
+	font-family: 'Open Sans', sans-serif;
 	font-size: 2.5em;
 	font-weight: 700;
 	color: #4A4A4A;
@@ -33,7 +37,7 @@ html, body
 
 #p2-intro img
 {
-	width: 20em;
+	width: 20.5em;
 	margin-top: 5vw;
 	margin-left: 5vw;
 	margin-right: 5vw;
@@ -41,6 +45,7 @@ html, body
 
 #p2-intro p
 {
+	font-family: 'Open Sans', sans-serif;
 	margin-top: 5vw;
 	margin-right: 5vw;
 }
@@ -55,6 +60,7 @@ html, body
 
 #p2-design h1
 {
+	font-family: 'Open Sans', sans-serif;
 	padding-top: 2vw;
 	margin-bottom: 2vw;
 	font-size: 2.5em;
@@ -107,6 +113,7 @@ html, body
 
 .mockup button
 {
+	font-size: 1.3em;
 	margin-left: 1em;
 	color: #999;
 	font-weight: 400;
@@ -118,8 +125,7 @@ html, body
 
 .mockup button:hover
 {
-	color: #fff;
-	background-color: #4A4A4A;
+	background-color: #ECEBEB;
 	transition: background-color .3s;
 }
 
@@ -133,6 +139,7 @@ html, body
 
 .devices button
 {
+	font-size: 1.3em;
 	margin-left: 1em;
 	color: #999;
 	font-weight: 400;
@@ -144,9 +151,22 @@ html, body
 
 .devices button:hover
 {
-	color: #fff;
-	background-color: #4A4A4A;
+	background-color: #ECEBEB;
 	transition: background-color .3s;
+}
+.wireframe
+{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.mockup
+{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.devices
+{
+	font-family: 'Open Sans', sans-serif;
 }
 
 .wireframe img
@@ -164,13 +184,150 @@ html, body
 	width: 26.25em;
 }
 
-
-
-
 #brand
 {
 	width: 2.5em;
 }
+
+/*------*/
+
+
+#p2-dev
+{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #F3F3F3;
+  	overflow: hidden;
+  	padding-bottom: 3em;
+  	height: 100%;
+}
+
+#p2-dev h1
+{
+	padding-top: 2vw;
+	margin-bottom: 2vw;
+	font-size: 2.5em;
+	font-weight: 700;
+	color: #4A4A4A;
+	text-align: center;
+}
+
+#p2-dev-outer
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#p2-dev-inner
+{
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+#p2-dev-inner div
+{
+	margin-left: 4em;
+	margin-right: 4em;
+}
+
+#p2-dev-inner i
+{
+	font-size:  2.5em;
+}
+
+.front-end i
+{
+	color: #E86C3A;
+}
+
+#p2-dev-inner h3
+{
+	font-weight: 300;
+	font-size: 1.4em;
+}
+
+#p2-dev-inner img
+{
+	width: 4.5em;
+}
+
+
+/*------_*/
+
+
+#p2-deploy
+{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #F3F3F3;
+  	overflow: hidden;
+  	padding-bottom: 3em;
+  	height: 100%;
+}
+
+#p2-deploy h1
+{
+	padding-top: 2vw;
+	margin-bottom: 2vw;
+	font-size: 2.5em;
+	font-weight: 700;
+	color: #4A4A4A;
+	text-align: center;
+}
+
+
+
+#p2-dev-outer button
+{
+	font-size: 1.3em;
+	margin-left: 1em;
+	color: #999;
+	font-weight: 400;
+	/* Button Background: */
+	background: #FFFFFF;
+	border: 1px solid #D8D8D8;
+	border-radius: 6px;
+}
+
+#p2-dev-outer button:hover
+{
+	background-color: #ECEBEB;
+	transition: background-color .3s;
+}
+
+#dev-icon
+{
+	margin-top: 2em;
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+#dev-icon i
+{
+	font-size: 3em;
+}
+
+.wireframe img:hover
+{
+	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+	transition: box-shadow .3s;
+}
+
+.mockup img:hover
+{
+	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+	transition: box-shadow .3s;
+}
+
+.devices img:hover
+{
+	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+	transition: box-shadow .3s;
+}
+
+
+
+
 
 
 
@@ -216,9 +373,12 @@ html, body
 		width: 20em;
 	}
 
-	
 
-
+	#p2-dev-inner
+	{
+		display: grid;
+		grid-template-columns: auto;
+	}
 
 
 }
