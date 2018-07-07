@@ -297,9 +297,14 @@ html, body
 
 #dev-icon
 {
-	margin-top: 2em;
 	display: grid;
 	grid-template-columns: auto auto;
+}
+
+#dev-icon button
+{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 }
 
 #dev-icon i
