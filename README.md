@@ -1,19 +1,22 @@
-# Feed Society
+# Webstie Portfolio
 
-News feed website that pulls the latest fashion, sneakers, music, and sports RSS feeds.
+Website created to display personal projects
 
-## Get Started (Mac OS)
+## Installation
 
-1. Copy/Paste all files into a folder
+1. Clone the Repository to your www directory
+   ```
+   $ git clone https://github.com/hadiaamir/Website-Portfolio.git
+   ```
+   
+## Contributors
 
-2. Install full webserver (Apache, PHP, MySQL, phpMyAdmin) on your machine
+Name: Hadi Aamir 
 
-Tutorial Link: https://www.youtube.com/watch?v=o2Qt1H4duYw
+Portfolio Website: https://www.hadiaamir.ml
 
-3. cd to root directory and copy/paste folder
+## License & Copyright
 
-4. cd to "dbconnect.php" file and fill in the required values for $db_host, $db_user, $db_pass, $db_name 
+© 2018 Hadi aamir
 
-5. Run "users.sql" file
-
-6. Go to http://localhost/foldername
+Licensed under the MIT License
