@@ -29,11 +29,10 @@ html, body
 /*---------------------about----------------*/
 #about-section
 {
-	/* Background: */
-
 	background: #D27580;
- 	height: 100vh;
+ 	height: 100%;
  	padding: 2em;
+ 	padding-bottom: 6em;
 }
 
 #about-section h1
