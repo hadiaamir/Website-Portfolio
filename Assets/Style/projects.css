@@ -24,6 +24,7 @@ html, body
 {
 	display: grid;
 	grid-template-columns: auto auto;
+
 }
 
 #p2-intro h1
@@ -339,7 +340,6 @@ html, body
 	#p2-intro
 	{	
 		padding-bottom: 2em;
-	  	height: 100vh;
 	}
 
 
