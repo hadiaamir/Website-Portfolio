@@ -32,7 +32,12 @@ html, body
 	background: #D27580;
  	height: 100%;
  	padding: 2em;
- 	padding-bottom: 6em;
+ 	height: 100%;
+		display: flex;
+		justify-content: center;
+	  	align-items: center;
+  		flex-direction: column;
+  		padding-bottom: 6em;
 }
 
 #about-section h1
@@ -196,6 +201,72 @@ html, body
 {
 	color: #ECEBEB;
 	transition: color .3s;
+}
+
+
+
+
+
+.skills,
+.skills .skill,
+.skills .skill .skill-title,
+.skills .skill .skill-bar {
+   width: 100%;
+   float: left;
+}
+
+
+
+.skills .skill {
+   margin-bottom: 30px;
+}
+
+.skills .skill .skill-title {
+   color: #fff;
+   margin-bottom: 10px;
+   font-weight: 400;
+   font-size: 14px;
+}
+
+.skills .skill .skill-bar {
+   width: 0;
+   height: 6px;
+   background: #f0f0f0;
+   transition: 1s cubic-bezier(1, 0, .5, 1);
+   -webkit-transition: 1s cubic-bezier(1, 0, .5, 1);
+   -ms-transition: 1s cubic-bezier(1, 0, .5, 1);
+}
+
+.skills.active .skill .skill-bar {
+   width: 100%;
+}
+
+.skills .skill .skill-bar span {
+   float: left;
+   width: 0%;
+   background: #1D91F2;
+   height: 6px;
+   transition: 1s cubic-bezier(1, 0, .5, 1);
+   -webkit-transition: 1s cubic-bezier(1, 0, .5, 1);
+   -ms-transition: 1s cubic-bezier(1, 0, .5, 1);
+}
+
+.skills .skill .skill-bar span b {
+   float: left;
+   width: 100%;
+   text-align: right;
+   opacity: 0;
+   font-size: 14px;
+   color: #fff;
+   font-weight: 400;
+   top: -13px;
+}
+
+.container
+{
+  width: 100%;
+  max-width: 600px;
+
 }
 
 

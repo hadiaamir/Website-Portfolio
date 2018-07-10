@@ -21,6 +21,8 @@
 
   	<script type="text/javascript" src="Assets/Action/scroll.js"></script>
 
+  	<script type="text/javascript" src="Assets/Action/skills.js"></script>
+
 
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
@@ -72,6 +74,51 @@
 			year studying Computer Science at the University of 
 			Guelph. I have a strong passion for web design/development.</p>
 
+		<div class="container">
+			<div class="skills">
+			   <!-- skill -->
+			   <div class="skill">
+			      <!-- title -->
+			      <div class="skill-title">
+			         HTML/CSS
+			      </div>
+			      <!-- bar -->
+			      <div class="skill-bar" data-bar="90"><span></span></div>
+			   </div>
+			   <!-- #skill -->
+			   <!-- skill -->
+			   <div class="skill">
+			      <!-- title -->
+			      <div class="skill-title">
+			         Javascript
+			      </div>
+			      <!-- bar -->
+			      <div class="skill-bar" data-bar="70"><span></span></div>
+			   </div>
+			   <!-- #skill -->
+			   <!-- skill -->
+			   <div class="skill">
+			      <!-- title -->
+			      <div class="skill-title">
+			         Java
+			      </div>
+			      <!-- bar -->
+			      <div class="skill-bar" data-bar="60"><span></span></div>
+			   </div>
+			   <!-- #skill -->
+			   <!-- skill -->
+			   <div class="skill">
+			      <!-- title -->
+			      <div class="skill-title">
+			         Graphic Design
+			      </div>
+			      <!-- bar -->
+			      <div class="skill-bar" data-bar="80"><span></span></div>
+			   </div>
+			   <!-- #skill -->
+			</div>
+		</div>
+
 			<button>Resume</button>
 		
 	</section>
@@ -112,7 +159,18 @@
 
 	</section>
 
-
+<script type="text/javascript">
+	$(".skills").addClass("active")
+$(".skills .skill .skill-bar span").each(function() {
+   $(this).animate({
+      "width": $(this).parent().attr("data-bar") + "%"
+   }, 1000);
+   $(this).append('<b>' + $(this).parent().attr("data-bar") + '%</b>');
+});
+setTimeout(function() {
+   $(".skills .skill .skill-bar span b").animate({"opacity":"1"},1000);
+}, 2000);
+</script>
 
 </body>
 
