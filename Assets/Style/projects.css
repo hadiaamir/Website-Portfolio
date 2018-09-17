@@ -1,3 +1,14 @@
+/***
+Description: Styling file for projects page
+
+TABLE OF CONTENTS
+-------------- projects.css ------------------
+Project Intro - Introduction section
+Project Design - Design section
+Project Development - Development section
+Project Deploy - Deploy section
+***/
+
 html, body
 {
 	margin: 0;
@@ -11,6 +22,7 @@ html, body
 	background-color: #fff;
 }
 
+/*-------------Project Intro-----------------*/
 #p2-intro
 {
 	background-color: #F3F3F3;
@@ -51,6 +63,7 @@ html, body
 	margin-right: 5vw;
 }
 
+/*-------------Project Design-----------------*/
 #p2-design
 {
 	background-color: #F3F3F3;
@@ -83,13 +96,12 @@ html, body
 }
 
 
-
 #p2-des-ux
 {
 	display: flex;
 	justify-content: center;
-	  align-items: center;
-	  flex-direction: column;
+	align-items: center;
+	flex-direction: column;
 }
 
 
@@ -190,8 +202,8 @@ html, body
 	width: 2.5em;
 }
 
-/*------*/
 
+/*------------Project Development--------------*/
 
 #p2-dev
 {
@@ -254,8 +266,7 @@ html, body
 }
 
 
-/*------_*/
-
+/*-------------Project Deploy-----------------*/
 
 #p2-deploy
 {
