@@ -27,7 +27,7 @@ html, body
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-  	height: 100vh;
+  	height: 70vh;
   	overflow: hidden;
 }
 
@@ -36,12 +36,59 @@ html, body
 	font-size: 3.5em;
 	font-weight: 700;
 	color: #fff;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
 }
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#home-section h2
+{
+	font-size: 1em;
+	font-weight: 100;
+	margin-top: 0;
+	color: #999;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
 
 /*--------------About----------------*/
 #about-section
 {
-	background: #94BFCB;
+	background: #F3F3F3;
  	height: 100%;
  	padding: 2em;
  	height: 100%;
@@ -56,20 +103,34 @@ html, body
 {
 	font-size: 4.5em;
 	font-weight: 700;
-	color: #fff;
+	color: #4A4A4A;
 	text-align: center;
+}
+
+#about-container
+{
+	background-color: #fff;
+	border-radius: 1em;
+	padding-right: 1.5em;
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+#about-section img
+{
+	padding-top: 4em;
+	padding-right: 2em;
 }
 
 #about-section p
 {
-	color: #fff;
+	color: #9B9B9B;
 	display: block;
 	font-weight: 300;
 	margin-right: auto;
 	margin-left: auto;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	max-width: 700px;
-	margin-top: 4vw;
 }
 
 #about-section a
@@ -79,13 +140,13 @@ html, body
 
 #about-section button
 {
-	color: #999;
+	color: #9B9B9B;
 	font-weight: 400;
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
-	border-color: #4A4A4A;
-	border: 1px solid #D8D8D8;
+	border-color: #9B9B9B;
+	border: 1px solid #9B9B9B;
 	background-color: #fff;
 	font-size: 1.5em;
 	margin-top: 3em;
@@ -156,7 +217,7 @@ html, body
 
 .skills .skill .skill-title 
 {
-   color: #fff;
+   color: #9B9B9B;
    margin-bottom: 10px;
    font-weight: 400;
    font-size: 14px;
@@ -195,7 +256,7 @@ html, body
    text-align: right;
    opacity: 0;
    font-size: 14px;
-   color: #fff;
+   color: #9B9B9B;
    font-weight: 400;
    top: -13px;
 }
@@ -203,10 +264,14 @@ html, body
 /*--------------Projects----------------*/
 #projects-section
 {
-	background-color: #F3F3F3;
+	background-color: #F6F6F6;
 	height: 100%;
  	padding: 2em;
- 	padding-bottom: 12em;
+ 	padding-bottom: 7em;
+ 	display: flex;
+	justify-content: center;
+	align-items: center;
+  	flex-direction: column;
 }
 
 #projects-section h1
@@ -215,6 +280,7 @@ html, body
 	font-weight: 700;
 	color: #4A4A4A;
 	text-align: center;
+	padding-bottom: 0.5em;
 }
 
 #projects-section img
@@ -231,9 +297,12 @@ html, body
 .projects-content
 {
 	display: grid;
-	grid-template-columns: auto auto;
-	padding-left: 2em;
-	padding-right: 2em;
+	grid-template-columns: auto;
+}
+
+.projects-content p
+{
+	color: #9B9B9B;	
 }
 
 .projects-content h2
@@ -241,15 +310,12 @@ html, body
 	font-weight: 400;
 	font-size: 3em;
 	color: #4A4A4A;
-	margin-right: 2em;
 }
 
 .projects-group
 {
-	padding-left: 200px;
-	padding-right: 200px;
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: auto;
 	grid-row-gap: 50px;
 }
 
@@ -291,6 +357,10 @@ html, body
 		display: none;
 	}
 
+	#home-section h1
+	{
+		font-size: 2.5em;
+	}
 
 	#about-section
 	{
@@ -311,7 +381,10 @@ html, body
 
 	#about-section p
 	{
-		font-size: 110%;
+		font-size: 100%;
+		text-align: center;
+		padding-left: 2em;
+		padding-right: 2em;
 	}
 
 	#about-section button
@@ -320,6 +393,19 @@ html, body
 		height: 3em;
 		width: 5em;
 
+	}
+
+	#about-container
+	{
+		grid-template-columns: auto;
+		padding: 0em;
+
+	}
+
+	.skills
+	{
+		padding: 3em;
+		width: 17em;
 	}
 
 	#projects-section
@@ -347,10 +433,8 @@ html, body
 		padding-right: 0em;
 		display: grid;
 		grid-template-columns: auto;
-		grid-row-gap: 50px;
 	}
 	
-
 	.projects-content h2
 	{
 		display: none;
@@ -359,16 +443,14 @@ html, body
 	#projects-section img
 	{	
 		width: 300px;
-
 	}
 
 	.projects-content
 	{
 		display: grid;
-		grid-template-columns: auto auto;
+		grid-template-columns: auto;
 		padding-left: 0.5em;
 		padding-right: 0;
-	
 	}
 
 	#projects-section button
@@ -392,15 +474,6 @@ html, body
 	{
 		font-size: 4em;
 	}
-
   
 }
-
-
-
-
-
-
-
-
 

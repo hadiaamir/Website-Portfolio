@@ -4,7 +4,7 @@ Description: Styling file for menu navigation
 
 #project-nav
 {
-      background-color: #222;
+      background-color: #fff;
       line-height: 40px;
       list-style: none;
       overflow: hidden;
@@ -18,9 +18,8 @@ Description: Styling file for menu navigation
 
 nav .logo-pro a
 {
-      text-decoration: none; 
+    text-decoration: none; 
 }
-
 
 .logo-pro a
 {
@@ -28,7 +27,7 @@ nav .logo-pro a
       position: fixed;
       float: left;
       margin: 16px 46px;
-      color: #fff;
+      color: #343434;
       font-size: 20px;
       letter-spacing: 2px;
       font-weight: 700; 
@@ -47,7 +46,7 @@ nav .logo-pro a
       position: fixed;
       float: left;
       margin: 16px 46px;
-      color: #fff;
+      color: #343434;
       font-size: 20px;
       letter-spacing: 2px;
       font-weight: 700;     
@@ -64,7 +63,7 @@ nav ul
 {
       line-height: 40px;
       list-style: none;
-      background: rgba(0, 0, 0, 0);
+      background: #fff;
       overflow: hidden;
       color: #fff;
       padding: 0;
@@ -76,7 +75,7 @@ nav ul
 
 nav.black ul 
 {
-      background-color: #222;
+      background-color: #fff;
 }
 
 nav ul li 
@@ -88,17 +87,17 @@ nav ul li
 nav ul li a 
 {
       text-decoration: none;
-      color: #fff;
+      color: #343434;
       font-size: 16px;
       font-weight: 300;
 }
 
 .menu-icon 
 {     
-      background-color: #222;
+      background-color: #fff;
       text-align: right;  
       cursor: pointer;
-      color: #fff;
+      color: #4A4A4A;
       display: none;
 }
 
@@ -122,7 +121,7 @@ nav ul li a
 
 @media(max-width: 920px) 
 {
-       .logo-pro a
+         .logo-pro a
       {
             position: fixed;
             top: 0;
@@ -141,10 +140,10 @@ nav ul li a
       nav ul 
       {
           max-height: 0px;
-          background-color: #222;
+          background-color: #fff;
       }
 
-      nav.black ul 
+      nav.white ul 
       {
             background-color: #222;
       }
