@@ -342,7 +342,37 @@ html, body
 	transition: box-shadow .3s;
 }
 
+#p3-design
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
 
+#p3-design img
+{
+	width: 60%;
+}
+
+#p3-design h1
+{
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 2vw;
+	margin-bottom: 2vw;
+	font-size: 2.5em;
+	font-weight: 700;
+	color: #4A4A4A;
+	text-align: center;
+}
+
+#p3-design h2
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5em;
+	font-weight: 400;
+	text-align: center;	
+}
 
 
 @media only screen and (max-width: 992px) 
@@ -391,6 +421,11 @@ html, body
 	{
 		display: grid;
 		grid-template-columns: auto;
+	}
+
+	#p3-design img
+	{
+		width: 100%;
 	}
 
 
