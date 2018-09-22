@@ -1,7 +1,7 @@
 <!--
 		Name: Had Aamir
 		Date created: July/01/2018
-		Date updated: Sept/17/2018
+		Date updated: Sept/22/2018
 		Description: Home page
 		File: index.html
 -->
@@ -27,14 +27,10 @@
 	
 	 <script type="text/javascript" src="Assets/Action/action.js"></script>
 
-  	<script type="text/javascript" src="Assets/Action/scroll.js"></script>
-
   	<script type="text/javascript" src="Assets/Action/skills.js"></script>
-
 
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-	  <script src="jquery-3.3.1.min.js"></script>
 
 </head>
 
@@ -68,23 +64,26 @@
 <body>
 
 
-	<section id="home-section" >
+	<section id="home-section">
 
 		<h1>Hadi Aamir</h1>
-		
+		<h2>Software Developer • Graphic Designer</h2>
+	
 	</section>
 
 	<section id="about-section">
 
 		<h1>About</h1>
 
+		<div id="about-container">
 			<img src="Assets/Images/profilePic.png" width="350px">
 
+		<div class="container">
 			<p>Hi, i'm currently in 2nd year studying Computer Science at 
 			the University of Guelph. I have a passion for designing/developing
 			web applications.</p>
 
-		<div class="container">
+
 			<div class="skills">
 			   <!-- skill -->
 			   <div class="skill">
@@ -129,11 +128,11 @@
 			</div>
 		</div>
 
-			
-			<a href="Assets/Files/resumeTemplate.pdf">
+	</div>
+			<a href="Assets/Files/HadiAamirR.pdf">
 				<button>Resume</button>
 			</a>
-		
+
 	</section>
 
 
@@ -145,16 +144,20 @@
 	
 		<div class="projects-content">
 			<a href="project1.html"><img src="Assets/Images/portfolio.png"></a>
+			<p>HTML • CSS • JS</p>
 		</div>
 
 		<div class="projects-content">
 			<a href="project2.html"><img src="Assets/Images/fs-title.png"></a>
+			<p>HTML • CSS • JS • PHP • MySQL • Sketch</p>
 		</div>
 
-		
+		<div class="projects-content">
+			<a href="project3.html"><img src="Assets/Images/yearbook.jpg"></a>
+			<p>Photoshop</p>
+		</div>
 	</div>
 
-	
 
 	</section>
 
@@ -185,7 +188,5 @@ setTimeout(function() {
 </script>
 
 </body>
-
-
 
 </html>
