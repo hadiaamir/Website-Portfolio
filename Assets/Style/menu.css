@@ -13,6 +13,7 @@ Description: Styling file for menu navigation
       margin: 0;
       padding-right: 40px;
       transition: 1s;   
+      transition: 1s;
 }
 
 nav .logo-pro a
