@@ -12,8 +12,7 @@ Description: Styling file for menu navigation
       text-align: right;
       margin: 0;
       padding-right: 40px;
-      transition: 1s;
-      
+      transition: 1s;   
 }
 
 nav .logo-pro a
@@ -49,7 +48,8 @@ nav .logo-pro a
       color: #343434;
       font-size: 20px;
       letter-spacing: 2px;
-      font-weight: 700;     
+      font-weight: 700;   
+      font-family: "San Francisco Display Semibold";  
 }
 
 nav 
@@ -111,6 +111,10 @@ nav ul li a
 .menu-icon :hover
 {
 	color: #999;
+}
+.menu a
+{
+      font-family: "San Francisco Display Medium";
 }
 
 .menu a:hover 
