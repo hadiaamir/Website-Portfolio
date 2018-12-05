@@ -22,17 +22,33 @@ html, body
 /*-----------------Home----------------*/
 #home-section 
 {
-	background-color: #222;
+	background-color: #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-  	height: 70vh;
+  	height: 100vh;
   	overflow: hidden;
+}
+
+.home-container
+{
+	display: grid;
+   	height: 100%;
+}
+
+
+.center-fit 
+{
+	max-width: 100%;
+	margin: auto;
 }
 
 #home-section h1
 {
+	position: absolute;
+	left: 270px;
+	bottom: 500px;
 	font-size: 3.5em;
 	font-weight: 700;
 	color: #fff;
@@ -298,6 +314,7 @@ html, body
 {
 	display: grid;
 	grid-template-columns: auto;
+	margin-left: 50px;
 }
 
 .projects-content p
