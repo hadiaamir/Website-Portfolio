@@ -55,46 +55,54 @@ html, body
 
 
 /*-----------------Home----------------*/
-#home-section 
-{
-	background-color: #fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-  	height: 100vh;
-  	overflow: hidden;
+#home-section {
+  display: flex;
+  height: 90vh;
+  background-image: linear-gradient(-180deg, #CACACA 0%, #FFFFFF 65%);
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-.home-container
-{
-	display: grid;
-   	height: 100%;
+.home-container {
+   display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
+#home-section h1 {
+	font-family: "San Francisco Display Thin";
+	font-size: 8vh;
+	color: #3B3B3B;
 
-.center-fit 
-{
-	max-width: 100%;
-	margin: auto;
-	font-family: "San Francisco Display Bold";
 }
 
-#home-section h1
-{
-	position: absolute;
-	left: 400px;
-	left: 270px;
-	bottom: 500px;
-	font-size: 3.5em;
-	font-weight: 700;
+#home-section span {
+	color: #3B3B3B;
+	font-family: "San Francisco Display Semibold";
+}
+
+#home-section button {
 	color: #fff;
-	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
+	background-color: #3B3B3B;
+	font-size: 1.5em;
+
+	height: 50px;
+	width: 70px;
+	border-radius: 5px;
+	border: none;
 }
+
+#home-section button:hover {
+	background-color: #2B2B2B;
+	transition: .3s;
+	cursor: pointer;
+}
+
+
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -131,29 +139,15 @@ html, body
 }
 
 
-#home-section h2
-{
-	font-size: 1em;
-	font-weight: 100;
-	margin-top: 0;
-	color: #999;
-	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
-}
+
 
 
 /*--------------About----------------*/
 #about-section
 {
-
-	background: white;
 	background: white;
  	height: 100%;
  	padding: 2em;
- 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -165,7 +159,7 @@ html, body
 {
 	font-size: 4.5em;
 	font-weight: 700;
-	color: black;
+	color: #3B3B3B;
 	text-align: center;
 	font-family: "San Francisco Display Semibold";
 }
@@ -186,20 +180,6 @@ html, body
 	padding-right: 2em;
 }
 
-#about-container
-{
-	background-color: #fff;
-	border-radius: 1em;
-	padding-right: 1.5em;
-	display: grid;
-	grid-template-columns: auto auto;
-}
-
-#about-section img
-{
-	padding-top: 4em;
-	padding-right: 2em;
-}
 
 #about-section p
 {
@@ -365,15 +345,15 @@ data-bar
 {
 	font-size: 4em;
 	font-weight: 700;
-	color: black;
+	color: #3B3B3B;
 	text-align: center;
-	padding-bottom: 0.5em;
 	font-family: "San Francisco Display Semibold";
 }
 
 #projects-section img
 {
 	width: 340px;
+	height: 240px;
 	transition: box-shadow .3s;
 }
 
@@ -384,9 +364,9 @@ data-bar
 
 .projects-content
 {
-	display: grid;
-	grid-template-columns: auto;
-	margin-left: 50px;
+	display: flex;
+	flex-flow: column;
+
 }
 
 .projects-content p
@@ -404,9 +384,9 @@ data-bar
 
 .projects-group
 {
-	display: grid;
-	grid-template-columns: auto;
-	grid-row-gap: 50px;
+	display: flex;
+	flex-flow: row wrap;
+	
 }
 
 #projects-section button
@@ -443,8 +423,10 @@ data-bar
 #footer-section h4
 {
 	font-family: "San Francisco Display Ultralight";
-	font-size: 14px;
+	font-size: 18px;
 	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 1.5em;
 	color: #999;
 }
 
@@ -469,27 +451,22 @@ data-bar
 		font-size: 2.5em;
 	}
 
-	#about-section
-	{
-		height: 100%;
-		display: flex;
-		justify-content: center;
-	  	align-items: center;
-  		flex-direction: column;
-  		padding-bottom: 6em;
+	#home-section {
+		  margin-top: 5em;
 	}
+
+
 	#about-section h1
 	{
-		display: block;
-		margin-right: auto;
-		margin-left: auto;
 		padding-right: 0em;
+		margin-bottom: 0;
 	}
 
 	#about-section p
 	{
 		font-size: 100%;
 		text-align: center;
+		margin-top: 2em;
 		padding-left: 2em;
 		padding-right: 2em;
 	}
@@ -504,15 +481,23 @@ data-bar
 
 	#about-container
 	{
-		grid-template-columns: auto;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
 		padding: 0em;
+	}
 
+	#about-section img {
+		padding-top: 2em;
+		padding-right: 0;
 	}
 
 	.skills
 	{
 		padding: 3em;
-		width: 17em;
+		width: 22em;
+
 	}
 
 	#projects-section
@@ -521,17 +506,12 @@ data-bar
 		display: flex;
 		justify-content: center;
 	  	align-items: center;
-  		flex-direction: column;
-  		padding-bottom: 6em;
+  		flex-flow: column;
 	}
 
 	#projects-section h1
 	{
-		display: block;
-		margin-right: auto;
-		margin-left: auto;
 		padding-right: 0em;
-
 	}
 
 	.projects-group
@@ -550,13 +530,12 @@ data-bar
 	#projects-section img
 	{	
 		width: 300px;
+		height: 200px;
 	}
 
 	.projects-content
 	{
-		display: grid;
-		grid-template-columns: auto;
-		padding-left: 0.5em;
+		margin-left: 0;
 		padding-right: 0;
 	}
 

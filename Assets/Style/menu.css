@@ -65,7 +65,8 @@ nav ul
       line-height: 40px;
       list-style: none;
       background: #fff;
-      opacity: 0.4;
+      /*opacity: 0.4;*/
+      box-shadow: 0 2px 4px 0 rgba(143,143,143,0.50);
       overflow: hidden;
       color: #fff;
       padding: 0;
