@@ -177,7 +177,8 @@ html, body
 #about-section img
 {
 	padding-top: 4em;
-	padding-right: 2em;
+	padding-right: 8em;
+	width: 250px;
 }
 
 
